@@ -10,6 +10,10 @@ import phone from '../../assets/home/desktop/image-hero-phone.png';
 import pattern from '../../assets/home/desktop/bg-pattern-hero-home.svg';
 
 const StyledHeader = styled.header`
+  margin: 0 2rem;
+`;
+
+const Container = styled.div`
   ${maxWidthLg}
   ${sectionSpacingSm}
   position: relative;
@@ -37,29 +41,31 @@ const StyledHeader = styled.header`
 export default function HomeHero() {
   return (
     <StyledHeader>
-      <TwoCol>
-        <div className='info'>
-          <MainHeading light>
-            Award-winning custom designs and digital branding solutions
-          </MainHeading>
-          <Paragraph light>
-            With over 10 years in the industry, we are experienced in creating
-            fully responsive websites, app design, and engaging brand
-            experiences. Find out more about our services.
-          </Paragraph>
-          <Link href='/OurCompany' passHref>
-            <Button primary>Learn More</Button>
-          </Link>
-        </div>
-        <div>
-          <div className='pattern'>
-            <Image src={pattern} alt='' />
+      <Container>
+        <TwoCol>
+          <div className='info'>
+            <MainHeading light>
+              Award-winning custom designs and digital branding solutions
+            </MainHeading>
+            <Paragraph light>
+              With over 10 years in the industry, we are experienced in creating
+              fully responsive websites, app design, and engaging brand
+              experiences. Find out more about our services.
+            </Paragraph>
+            <Link href='/OurCompany' passHref>
+              <Button primary>Learn More</Button>
+            </Link>
           </div>
-          <div className='phone'>
-            <Image placeholder='blur' src={phone} alt='smartphone' />
+          <div>
+            <div className='pattern'>
+              <Image src={pattern} alt='' />
+            </div>
+            <div className='phone'>
+              <Image placeholder='blur' src={phone} alt='smartphone' />
+            </div>
           </div>
-        </div>
-      </TwoCol>
+        </TwoCol>
+      </Container>
     </StyledHeader>
   );
 }

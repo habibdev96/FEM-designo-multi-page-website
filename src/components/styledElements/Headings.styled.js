@@ -13,4 +13,5 @@ export const SubHeading = styled.h4`
   font-size: 2rem;
   text-transform: uppercase;
   ${({ link }) => link && `color: var(--white);`}
+  ${({ dark }) => dark && `color: var(--darkGray);`}
 `;

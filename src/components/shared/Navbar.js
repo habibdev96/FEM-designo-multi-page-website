@@ -3,16 +3,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FlexBetween } from '../styledElements/Containers.styled';
 import { StyledLink } from '../styledElements/Links.styled';
-import {
-  maxWidthLg,
-  sectionSpacingSm,
-  flexAlign,
-} from '../../abstracts/Mixins';
+import { sectionSpacingSm, flexAlign } from '../../abstracts/Mixins';
 import logo from '../../assets/shared/desktop/logo-dark.png';
 import { useGlobalContext } from '../../context/context';
 
 const StyledNav = styled.nav`
-  ${maxWidthLg}
   ${sectionSpacingSm}
 
   .logo {

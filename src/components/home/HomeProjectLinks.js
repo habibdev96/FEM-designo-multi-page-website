@@ -5,7 +5,9 @@ import webDesignBg from '../../assets/home/desktop/image-web-design-large.jpg';
 import appDesignBg from '../../assets/home/desktop/image-app-design.jpg';
 import graphicDesignBg from '../../assets/home/desktop/image-graphic-design.jpg';
 
-const StyledSection = styled.section``;
+const StyledSection = styled.section`
+  margin: 0 2rem;
+`;
 
 const Container = styled.div`
   ${maxWidthLg}
