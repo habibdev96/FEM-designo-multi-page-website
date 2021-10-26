@@ -5,7 +5,7 @@ export const StyledLink = styled.a`
   ${textStyles}
   font-size: 1.4rem;
   text-transform: uppercase;
-  color: var(--darkGray);
+  color: ${({ light }) => (light ? 'var(--white)' : 'var(--darkGray)')};
 
   &:hover,
   &:focus {

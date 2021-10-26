@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 import Image from 'next/image';
-import { FlexBetween } from '../styledElements/Containers';
-import logo from '../../../public/assets/shared/desktop/logo-dark.png';
+import Link from 'next/link';
+import { FlexBetween } from '../styledElements/Containers.styled';
+import { StyledLink } from '../styledElements/Links.styled';
 import {
   maxWidthLg,
   sectionSpacingSm,
   flexAlign,
 } from '../../abstracts/Mixins';
-import { StyledLink } from '../styledElements/Links';
-import Link from 'next/link';
+import logo from '../../../public/assets/shared/desktop/logo-dark.png';
 import { useGlobalContext } from '../../context/context';
 
 const StyledNav = styled.nav`

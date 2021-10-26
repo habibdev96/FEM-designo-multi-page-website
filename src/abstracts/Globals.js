@@ -11,7 +11,8 @@ const Globals = createGlobalStyle`
     --lightPeach: hsl(11, 100%, 80%);
     
     /* radius */
-    --mainRadius: 5rem;
+    --mainRadius: 2rem;
+    --secondaryRadius: 1rem;
 
     /* grid gap */
     --gap: 5rem; 
