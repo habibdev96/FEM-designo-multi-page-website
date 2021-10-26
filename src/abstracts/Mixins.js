@@ -1,5 +1,11 @@
 import { css } from 'styled-components';
 
+const flexAlign = css`
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+`;
+
 const headingStyles = css`
   font-weight: 500;
   letter-spacing: 0.2rem;
@@ -40,6 +46,7 @@ const maxWidthLg = css`
 `;
 
 export {
+  flexAlign,
   headingStyles,
   textStyles,
   sectionSpacingSm,

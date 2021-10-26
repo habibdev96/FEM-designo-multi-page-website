@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Globals from '../abstracts/Globals';
 import { AppProvider } from '../context/context';
+import Navbar from '../components/shared/Navbar';
 
 export default function MyApp({ Component, pageProps }) {
   return (
@@ -16,6 +17,7 @@ export default function MyApp({ Component, pageProps }) {
 
       <AppProvider>
         <Globals />
+        <Navbar />
         <Component {...pageProps} />
       </AppProvider>
     </>
