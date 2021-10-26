@@ -6,8 +6,8 @@ import { MainHeading } from '../styledElements/Headings.styled';
 import { Paragraph } from '../styledElements/Paragraphs.styled';
 import { Button } from '../styledElements/Buttons.styled';
 import { maxWidthLg, sectionSpacingSm } from '../../abstracts/Mixins';
-import phone from '../../../public/assets/home/desktop/image-hero-phone.png';
-import pattern from '../../../public/assets/home/desktop/bg-pattern-hero-home.svg';
+import phone from '../../assets/home/desktop/image-hero-phone.png';
+import pattern from '../../assets/home/desktop/bg-pattern-hero-home.svg';
 
 const StyledHeader = styled.header`
   ${maxWidthLg}

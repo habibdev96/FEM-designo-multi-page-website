@@ -8,7 +8,7 @@ import {
   sectionSpacingSm,
   flexAlign,
 } from '../../abstracts/Mixins';
-import logo from '../../../public/assets/shared/desktop/logo-dark.png';
+import logo from '../../assets/shared/desktop/logo-dark.png';
 import { useGlobalContext } from '../../context/context';
 
 const StyledNav = styled.nav`

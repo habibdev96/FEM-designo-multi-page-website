@@ -3,7 +3,7 @@ import Globals from '../abstracts/Globals';
 import { AppProvider } from '../context/context';
 import Navbar from '../components/shared/Navbar';
 
-export default function MyApp({ Component, pageProps }) {
+export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
