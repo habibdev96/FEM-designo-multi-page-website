@@ -36,7 +36,7 @@ export default function ProjectCards({ projectType }) {
 
   return (
     <StyledSection>
-      <ThreeCol start>
+      <ThreeCol start={+true}>
         {handleProjects().map((project) => (
           <ProjectCard key={project.id} {...project} />
         ))}

@@ -18,7 +18,7 @@ const StyledArticle = styled.article`
 
   .bg {
     position: relative;
-    height: 25rem;
+    height: 35rem;
     width: 100%;
 
     &--full {
