@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import ProjectHero from '../components/shared/ProjectHero';
-import AppDesignProjects from '../components/appDesign/AppDesignProjects';
+import ProjectCards from '../components/shared/ProjectCards';
 import Cta from '../components/shared/Cta';
 import appDesignBg from '../assets/app-design/desktop/bg-pattern-intro-app.svg';
 
@@ -18,7 +18,7 @@ export default function AppDesign() {
         pattern={appDesignBg}
       />
       <main>
-        <AppDesignProjects />
+        <ProjectCards projectType='appDesign' />
         <Cta />
       </main>
     </>

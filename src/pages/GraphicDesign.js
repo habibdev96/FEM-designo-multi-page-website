@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import ProjectHero from '../components/shared/ProjectHero';
-import GraphicDesignProjects from '../components/graphicDesign/GraphicDesignProjects';
+import ProjectCards from '../components/shared/ProjectCards';
 import Cta from '../components/shared/Cta';
 import graphicDesignBg from '../assets/graphic-design/desktop/bg-pattern-intro-graphic.svg';
 
@@ -18,7 +18,7 @@ export default function GraphicDesign() {
         pattern={graphicDesignBg}
       />
       <main>
-        <GraphicDesignProjects />
+        <ProjectCards projectType='graphicDesign' />
         <Cta />
       </main>
     </>

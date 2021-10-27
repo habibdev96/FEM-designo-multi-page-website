@@ -12,7 +12,7 @@ export const FlexBetween = styled.div`
 export const TwoCol = styled.div`
   ${maxWidthLg}
   display: grid;
-  align-items: center;
+  align-items: ${({ start }) => (start ? 'flex-start' : 'center')};
   grid-template-columns: repeat(2, 1fr);
   gap: var(--gap);
 `;

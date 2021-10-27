@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import ProjectHero from '../components/shared/ProjectHero';
-import WebDesignProjects from '../components/webDesign/WebDesignProjects';
+import ProjectCards from '../components/shared/ProjectCards';
 import Cta from '../components/shared/Cta';
 import webDesignBg from '../assets/web-design/desktop/bg-pattern-intro-web.svg';
 
@@ -18,7 +18,7 @@ export default function WebDesign() {
         pattern={webDesignBg}
       />
       <main>
-        <WebDesignProjects />
+        <ProjectCards projectType='webDesign' />
         <Cta />
       </main>
     </>
