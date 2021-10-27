@@ -8,6 +8,13 @@ export const MainHeading = styled.h1`
   text-transform: ${({ uppercase }) => uppercase && 'uppercase'};
 `;
 
+export const SectionHeading = styled.h2`
+  ${headingStyles}
+  font-size: 4rem;
+  color: ${({ light }) => (light ? 'var(--white)' : 'var(--darkGray)')};
+  text-transform: ${({ uppercase }) => uppercase && 'uppercase'};
+`;
+
 export const SubHeading = styled.h4`
   ${headingStyles}
   font-size: 2rem;

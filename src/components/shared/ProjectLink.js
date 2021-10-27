@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import Image from 'next/image';
 import { flexAlign } from '../../abstracts/Mixins';
-import { MainHeading, SubHeading } from '../styledElements/Headings.styled';
+import { SectionHeading, SubHeading } from '../styledElements/Headings.styled';
 import { BiChevronRight } from 'react-icons/bi';
 
 const StyledArticle = styled.article`
@@ -71,9 +71,9 @@ export default function ProjectLink({ bg, path, full, text }) {
           <div className='overlay'></div>
         </div>
         <div className='content'>
-          <MainHeading light uppercase>
+          <SectionHeading light uppercase>
             {text}
-          </MainHeading>
+          </SectionHeading>
           <div className='view'>
             <SubHeading link>View Projects</SubHeading>
             <BiChevronRight className='icon' />
