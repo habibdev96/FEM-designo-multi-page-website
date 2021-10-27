@@ -10,6 +10,23 @@ import {
   FaInstagram,
 } from 'react-icons/fa';
 
+import webDesignProjectImageOne from '../assets/web-design/desktop/image-express.jpg';
+import webDesignProjectImageTwo from '../assets/web-design/desktop/image-transfer.jpg';
+import webDesignProjectImageThree from '../assets/web-design/desktop/image-photon.jpg';
+import webDesignProjectImageFour from '../assets/web-design/desktop/image-builder.jpg';
+import webDesignProjectImageFive from '../assets/web-design/desktop/image-blogr.jpg';
+import webDesignProjectImageSix from '../assets/web-design/desktop/image-camp.jpg';
+
+import appDesignProjectImageOne from '../assets/app-design/desktop/image-airfilter.jpg';
+import appDesignProjectImageTwo from '../assets/app-design/desktop/image-eyecam.jpg';
+import appDesignProjectImageThree from '../assets/app-design/desktop/image-faceit.jpg';
+import appDesignProjectImageFour from '../assets/app-design/desktop/image-todo.jpg';
+import appDesignProjectImageFive from '../assets/app-design/desktop/image-loopstudios.jpg';
+
+import graphicDesignProjectImageOne from '../assets/graphic-design/desktop/image-change.jpg';
+import graphicDesignProjectImageTwo from '../assets/graphic-design/desktop/image-boxed-water.jpg';
+import graphicDesignProjectImageThree from '../assets/graphic-design/desktop/image-science.jpg';
+
 export const linksData = [
   { id: 1, text: 'Our Company', path: '/OurCompany' },
   { id: 2, text: 'Locations', path: '/Locations' },
@@ -46,4 +63,105 @@ export const socialsData = [
   { id: 3, icon: <FaTwitter />, alt: 'twitter icon' },
   { id: 4, icon: <FaPinterest />, alt: 'pinterest icon' },
   { id: 5, icon: <FaInstagram />, alt: 'instagram icon' },
+];
+
+export const webDesignProjectsData = [
+  {
+    id: 1,
+    image: webDesignProjectImageOne,
+    title: 'Express',
+    description: 'A multi-carrier shipping website for ecommerce businesses',
+  },
+  {
+    id: 2,
+    image: webDesignProjectImageTwo,
+    title: 'Transfer',
+    description:
+      'Site for low-cost money transfers and sending money within seconds',
+  },
+  {
+    id: 3,
+    image: webDesignProjectImageThree,
+    title: 'Photon',
+    description:
+      'A state-of-the-art music player with high-resolution audio and DSP effects',
+  },
+  {
+    id: 4,
+    image: webDesignProjectImageFour,
+    title: 'Builder',
+    description:
+      'Connects users with local contractors based on their location',
+  },
+  {
+    id: 5,
+    image: webDesignProjectImageFive,
+    title: 'Blogr',
+    description:
+      'Blogr is a platform for creating an online blog or publication',
+  },
+  {
+    id: 6,
+    image: webDesignProjectImageSix,
+    title: 'Camp',
+    description:
+      'Get expert training in coding, data, design, and digital marketing',
+  },
+];
+
+export const appDesignProjectsData = [
+  {
+    id: 1,
+    image: appDesignProjectImageOne,
+    title: 'Airfilter',
+    description:
+      'Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.',
+  },
+  {
+    id: 2,
+    image: appDesignProjectImageTwo,
+    title: 'Eyecam',
+    description:
+      'Product that lets you edit your favorite photos and videos at any time',
+  },
+  {
+    id: 3,
+    image: appDesignProjectImageThree,
+    title: 'Faceit',
+    description:
+      'Get to meet your favorite internet superstar with the faceit app',
+  },
+  {
+    id: 4,
+    image: appDesignProjectImageFour,
+    title: 'Todo',
+    description: 'A todo app that features cloud sync with light and dark mode',
+  },
+  {
+    id: 5,
+    image: appDesignProjectImageFive,
+    title: 'Loopstudios',
+    description: 'A VR experience app made for Loopstudios',
+  },
+];
+
+export const graphicDesignProjectsData = [
+  {
+    id: 1,
+    image: graphicDesignProjectImageOne,
+    title: 'Tim Brown',
+    description: 'A book cover designed for Tim Brown’s new release, ‘Change’',
+  },
+  {
+    id: 2,
+    image: graphicDesignProjectImageTwo,
+    title: 'Boxed Water',
+    description: 'A simple packaging concept made for Boxed Water',
+  },
+  {
+    id: 3,
+    image: graphicDesignProjectImageThree,
+    title: 'Science!',
+    description: 'A poster made in collaboration with the Federal Art Project',
+  },
 ];

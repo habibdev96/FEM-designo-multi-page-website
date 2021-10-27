@@ -29,7 +29,7 @@ const Container = styled.div`
   }
 
   .content {
-    padding: 5rem;
+    padding: 5rem 1rem 5rem 5rem;
     position: relative;
     z-index: 10;
   }
