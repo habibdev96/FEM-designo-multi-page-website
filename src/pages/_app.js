@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Globals from '../abstracts/Globals';
 import { AppProvider } from '../context/context';
 import Navbar from '../components/shared/Navbar';
+import Footer from '../components/shared/Footer';
 
 export default function App({ Component, pageProps }) {
   return (
@@ -19,6 +20,7 @@ export default function App({ Component, pageProps }) {
         <Globals />
         <Navbar />
         <Component {...pageProps} />
+        <Footer />
       </AppProvider>
     </>
   );

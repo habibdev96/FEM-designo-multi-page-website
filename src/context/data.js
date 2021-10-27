@@ -2,6 +2,14 @@ import homeFeatureIconOne from '../assets/home/desktop/illustration-passionate.s
 import homeFeatureIconTwo from '../assets/home/desktop/illustration-resourceful.svg';
 import homeFeatureIconThree from '../assets/home/desktop/illustration-friendly.svg';
 
+import {
+  FaFacebookSquare,
+  FaYoutube,
+  FaTwitter,
+  FaPinterest,
+  FaInstagram,
+} from 'react-icons/fa';
+
 export const linksData = [
   { id: 1, text: 'Our Company', path: '/OurCompany' },
   { id: 2, text: 'Locations', path: '/Locations' },
@@ -30,4 +38,12 @@ export const homeFeaturesData = [
     description:
       'We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.',
   },
+];
+
+export const socialsData = [
+  { id: 1, icon: <FaFacebookSquare />, alt: 'facebook icon' },
+  { id: 2, icon: <FaYoutube />, alt: 'youtube icon' },
+  { id: 3, icon: <FaTwitter />, alt: 'twitter icon' },
+  { id: 4, icon: <FaPinterest />, alt: 'pinterest icon' },
+  { id: 5, icon: <FaInstagram />, alt: 'instagram icon' },
 ];

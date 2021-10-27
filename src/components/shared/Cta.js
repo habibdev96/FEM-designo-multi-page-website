@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Image from 'next/image';
+import Link from 'next/link';
 import { TwoCol } from '../styledElements/Containers.styled';
 import { SectionHeading } from '../styledElements/Headings.styled';
 import { Paragraph } from '../styledElements/Paragraphs.styled';
@@ -9,6 +10,7 @@ import pattern from '../../assets/shared/desktop/bg-pattern-call-to-action.svg';
 
 const StyledSection = styled.section`
   margin: 0 2rem;
+  transform: translateY(10rem);
 `;
 
 const Container = styled.div`
@@ -53,7 +55,9 @@ export default function Cta() {
             </Paragraph>
           </div>
           <div className='btn'>
-            <Button primary>Get in Touch</Button>
+            <Link href='/Contact' passHref>
+              <Button primary>Get in Touch</Button>
+            </Link>
           </div>
         </TwoCol>
       </Container>
