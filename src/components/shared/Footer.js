@@ -9,6 +9,7 @@ import {
   headingStyles,
   textStyles,
 } from '../../abstracts/Mixins';
+import Tag from './Tag';
 import logo from '../../assets/shared/desktop/logo-light.png';
 import { useGlobalContext } from '../../context/context';
 
@@ -111,6 +112,7 @@ export default function Footer() {
           ))}
         </div>
       </FlexBetween>
+      <Tag />
     </StyledFooter>
   );
 }
