@@ -27,6 +27,10 @@ import graphicDesignProjectImageOne from '../assets/graphic-design/desktop/image
 import graphicDesignProjectImageTwo from '../assets/graphic-design/desktop/image-boxed-water.jpg';
 import graphicDesignProjectImageThree from '../assets/graphic-design/desktop/image-science.jpg';
 
+import locationCtaIconOne from '../assets/shared/desktop/illustration-canada.svg';
+import locationCtaIconTwo from '../assets/shared/desktop/illustration-australia.svg';
+import locationCtaIconThree from '../assets/shared/desktop/illustration-united-kingdom.svg';
+
 export const linksData = [
   { id: 1, text: 'Our Company', path: '/OurCompany' },
   { id: 2, text: 'Locations', path: '/Locations' },
@@ -164,4 +168,10 @@ export const graphicDesignProjectsData = [
     title: 'Science!',
     description: 'A poster made in collaboration with the Federal Art Project',
   },
+];
+
+export const locationsCtaData = [
+  { id: 1, icon: locationCtaIconOne, title: 'Canada' },
+  { id: 2, icon: locationCtaIconTwo, title: 'Australia' },
+  { id: 3, icon: locationCtaIconThree, title: 'United Kingdom' },
 ];

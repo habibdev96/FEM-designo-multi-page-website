@@ -6,6 +6,7 @@ import {
   webDesignProjectsData,
   appDesignProjectsData,
   graphicDesignProjectsData,
+  locationsCtaData,
 } from './data';
 
 const AppContext = React.createContext();
@@ -23,6 +24,7 @@ export const AppProvider = ({ children }) => {
   const [graphicDesignProjects, setGraphicDesignProjects] = useState(
     graphicDesignProjectsData
   );
+  const [locationsCta, setLocationsCta] = useState(locationsCtaData);
 
   const scrollToTop = () => window.scrollTo(0, 0);
 
@@ -36,6 +38,7 @@ export const AppProvider = ({ children }) => {
         webDesignProjects,
         appDesignProjects,
         graphicDesignProjects,
+        locationsCta,
       }}
     >
       {children}

@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import OurCompanyHero from '../components/ourCompany/OurCompanyHero';
 import OurCompanySection from '../components/ourCompany/OurCompanySection';
+import LocationsCta from '../components/shared/LocationsCta';
 import Cta from '../components/shared/Cta';
 import showcaseOne from '../assets/about/desktop/image-world-class-talent.jpg';
 import showcaseTwo from '../assets/about/desktop/image-real-deal.jpg';
@@ -22,7 +23,7 @@ export default function OurCompany() {
           descriptionTwo='Our team is multi-disciplinary and we are not merely interested in form — content and meaning are just as important. We give great importance to craftsmanship, service, and prompt delivery. Clients have always been impressed with our high-quality outcomes that encapsulates their brand’s story and mission.'
           invert={false}
         />
-
+        <LocationsCta />
         <OurCompanySection
           showcase={showcaseTwo}
           title='The real deal'

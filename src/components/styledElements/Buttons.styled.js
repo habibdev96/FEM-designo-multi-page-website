@@ -23,4 +23,17 @@ export const Button = styled.a`
         color: var(--white);
       }
     `}
+
+  ${({ secondary }) =>
+    secondary &&
+    css`
+      background-color: var(--peach);
+      color: var(--white);
+
+      &:hover,
+      &:focus {
+        background-color: var(--lightPeach);
+        color: var(--white);
+      }
+    `}
 `;
