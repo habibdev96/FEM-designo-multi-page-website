@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import { TwoCol } from '../styledElements/Containers.styled';
-import { maxWidthLg, sectionSpacingMd } from '../../abstracts/Mixins';
+import { maxWidthLg, sectionSpacingSm } from '../../abstracts/Mixins';
 
 const StyledSection = styled.article`
   ${maxWidthLg}
-  ${sectionSpacingMd}
+  ${sectionSpacingSm}
 `;
 
 export default function ProjectLinks({ children }) {
