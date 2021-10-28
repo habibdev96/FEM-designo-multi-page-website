@@ -31,6 +31,10 @@ import locationCtaIconOne from '../assets/shared/desktop/illustration-canada.svg
 import locationCtaIconTwo from '../assets/shared/desktop/illustration-australia.svg';
 import locationCtaIconThree from '../assets/shared/desktop/illustration-united-kingdom.svg';
 
+import locationMapOne from '../assets/locations/desktop/image-map-canada.png';
+import locationMapTwo from '../assets/locations/desktop/image-map-australia.png';
+import locationMapThree from '../assets/locations/desktop/image-map-united-kingdom.png';
+
 export const linksData = [
   { id: 1, text: 'Our Company', path: '/OurCompany' },
   { id: 2, text: 'Locations', path: '/Locations' },
@@ -174,4 +178,52 @@ export const locationsCtaData = [
   { id: 1, icon: locationCtaIconOne, title: 'Canada' },
   { id: 2, icon: locationCtaIconTwo, title: 'Australia' },
   { id: 3, icon: locationCtaIconThree, title: 'United Kingdom' },
+];
+
+export const locationsData = [
+  {
+    id: 1,
+    map: locationMapOne,
+    location: 'Canada',
+    officeInfo: {
+      office: 'Designo Central Office',
+      address: ['3886 Wellington Street', 'Toronto, Ontario M9C 3J5'],
+    },
+    contactInfo: {
+      title: 'Contact',
+      phone: 'P : +1 253-863-8967',
+      email: 'M : contact@designo.co',
+    },
+    invert: false,
+  },
+  {
+    id: 2,
+    map: locationMapTwo,
+    location: 'Australia',
+    officeInfo: {
+      office: 'Designo AU Office',
+      address: ['19 Balonne Street', 'New South Wales 2443'],
+    },
+    contactInfo: {
+      title: 'Contact',
+      phone: 'P : (02) 6720 9092',
+      email: 'M : contact@designo.au',
+    },
+    invert: true,
+  },
+  {
+    id: 2,
+    map: locationMapThree,
+    location: 'United Kingdom',
+    officeInfo: {
+      office: 'Designo UK Office',
+      address: ['13 Colorado Way', 'Rhyd-y-fro SA8 9GA'],
+    },
+    contactInfo: {
+      title: 'Contact',
+      phone: 'P : 078 3115 1400',
+      email: 'M : contact@designo.uk',
+    },
+    invert: false,
+  },
 ];

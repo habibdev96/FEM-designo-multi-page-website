@@ -7,6 +7,7 @@ import {
   appDesignProjectsData,
   graphicDesignProjectsData,
   locationsCtaData,
+  locationsData,
 } from './data';
 
 const AppContext = React.createContext();
@@ -25,13 +26,11 @@ export const AppProvider = ({ children }) => {
     graphicDesignProjectsData
   );
   const [locationsCta, setLocationsCta] = useState(locationsCtaData);
-
-  const scrollToTop = () => window.scrollTo(0, 0);
+  const [locations, setLocations] = useState(locationsData);
 
   return (
     <AppContext.Provider
       value={{
-        scrollToTop,
         links,
         homeFeatures,
         socials,
@@ -39,6 +38,7 @@ export const AppProvider = ({ children }) => {
         appDesignProjects,
         graphicDesignProjects,
         locationsCta,
+        locations,
       }}
     >
       {children}

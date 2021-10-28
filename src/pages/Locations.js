@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import LocationsSection from '../components/locations/LocationsSection';
 import Cta from '../components/shared/Cta';
 
 export default function Locations() {
@@ -10,6 +11,7 @@ export default function Locations() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main>
+        <LocationsSection />
         <Cta />
       </main>
     </>
