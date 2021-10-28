@@ -13,9 +13,9 @@ const StyledHeader = styled.header`
 
 const Container = styled.div`
   ${maxWidthLg}
-  background-color: var(--peach);
   position: relative;
   overflow: hidden;
+  background-color: var(--peach);
   border-radius: var(--secondaryRadius);
 
   .pattern {

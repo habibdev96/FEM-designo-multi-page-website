@@ -13,6 +13,7 @@ export const SectionHeading = styled.h2`
   font-size: 4rem;
   color: ${({ light }) => (light ? 'var(--white)' : 'var(--darkGray)')};
   text-transform: ${({ uppercase }) => uppercase && 'uppercase'};
+  ${({ peach }) => peach && `color: var(--peach);`}
 `;
 
 export const SubHeading = styled.h4`
