@@ -74,54 +74,33 @@ export default function SingleLocation({
   return (
     <StyledArticle>
       <Container className={`${invert && 'inverted'}`}>
-        {!invert ? (
-          <>
-            <div className='info'>
-              <div className='pattern'>
-                <Image src={pattern} alt='' />
-              </div>
-              <SectionHeading peach>{location}</SectionHeading>
-              <div className='contact'>
-                <div>
-                  <h5>{office}</h5>
-                  <p>{address[0]}</p>
-                  <p>{address[1]}</p>
-                </div>
-                <div>
-                  <h5>{title}</h5>
-                  <h5>{phone}</h5>
-                  <h5>{email}</h5>
-                </div>
-              </div>
+        {invert && (
+          <div className='map'>
+            <Image src={map} alt={location} />
+          </div>
+        )}
+        <div className='info'>
+          <div className='pattern'>
+            <Image src={pattern} alt='' />
+          </div>
+          <SectionHeading peach>{location}</SectionHeading>
+          <div className='contact'>
+            <div>
+              <h5>{office}</h5>
+              <p>{address[0]}</p>
+              <p>{address[1]}</p>
             </div>
-            <div className='map'>
-              <Image src={map} alt={location} />
+            <div>
+              <h5>{title}</h5>
+              <h5>{phone}</h5>
+              <h5>{email}</h5>
             </div>
-          </>
-        ) : (
-          <>
-            <div className='map'>
-              <Image src={map} alt={location} />
-            </div>
-            <div className='info'>
-              <div className='pattern'>
-                <Image src={pattern} alt='' />
-              </div>
-              <SectionHeading peach>{location}</SectionHeading>
-              <div className='contact'>
-                <div>
-                  <h5>{office}</h5>
-                  <p>{address[0]}</p>
-                  <p>{address[1]}</p>
-                </div>
-                <div>
-                  <h5>{title}</h5>
-                  <h5>{phone}</h5>
-                  <h5>{email}</h5>
-                </div>
-              </div>
-            </div>
-          </>
+          </div>
+        </div>
+        {!invert && (
+          <div className='map'>
+            <Image src={map} alt={location} />
+          </div>
         )}
       </Container>
     </StyledArticle>

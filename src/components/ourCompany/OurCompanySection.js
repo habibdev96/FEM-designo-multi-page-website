@@ -52,28 +52,20 @@ export default function OurCompanySection({
     <StyledSection>
       <Container>
         <TwoCol>
-          {!invert ? (
-            <>
-              <div className='showcase'>
-                <Image src={showcase} alt={title} />
-              </div>
-              <div className='info'>
-                <SectionHeading peach>{title}</SectionHeading>
-                <Paragraph dark>{descriptionOne}</Paragraph>
-                <Paragraph dark>{descriptionTwo}</Paragraph>
-              </div>
-            </>
-          ) : (
-            <>
-              <div className='info--inverted'>
-                <SectionHeading peach>{title}</SectionHeading>
-                <Paragraph dark>{descriptionOne}</Paragraph>
-                <Paragraph dark>{descriptionTwo}</Paragraph>
-              </div>
-              <div className='showcase--inverted'>
-                <Image src={showcase} alt={title} />
-              </div>
-            </>
+          {!invert && (
+            <div className='showcase'>
+              <Image src={showcase} alt={title} />
+            </div>
+          )}
+          <div className={`${!invert ? 'info' : 'info--inverted'}`}>
+            <SectionHeading peach>{title}</SectionHeading>
+            <Paragraph dark>{descriptionOne}</Paragraph>
+            <Paragraph dark>{descriptionTwo}</Paragraph>
+          </div>
+          {invert && (
+            <div className='showcase--inverted'>
+              <Image src={showcase} alt={title} />
+            </div>
           )}
         </TwoCol>
       </Container>
