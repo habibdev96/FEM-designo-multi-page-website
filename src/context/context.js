@@ -1,4 +1,5 @@
 import React, { useState, useContext } from 'react';
+import { useForm } from 'react-hook-form';
 import {
   linksData,
   homeFeaturesData,
@@ -28,6 +29,13 @@ export const AppProvider = ({ children }) => {
   const [locationsCta, setLocationsCta] = useState(locationsCtaData);
   const [locations, setLocations] = useState(locationsData);
 
+  const {
+    handleSubmit,
+    register,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (values) => console.log(values);
+
   return (
     <AppContext.Provider
       value={{
@@ -39,6 +47,10 @@ export const AppProvider = ({ children }) => {
         graphicDesignProjects,
         locationsCta,
         locations,
+        handleSubmit,
+        register,
+        errors,
+        onSubmit,
       }}
     >
       {children}

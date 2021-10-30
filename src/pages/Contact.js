@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import ContactHero from '../components/contact/ContactHero';
 import LocationsCta from '../components/shared/LocationsCta';
 
 export default function Contact() {
@@ -10,6 +11,7 @@ export default function Contact() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main>
+        <ContactHero />
         <LocationsCta />
       </main>
     </>

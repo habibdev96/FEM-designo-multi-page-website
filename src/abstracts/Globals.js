@@ -10,7 +10,6 @@ const Globals = createGlobalStyle`
     --peach: hsl(11, 72%, 66%);
     --lightPeach: hsl(11, 100%, 80%);
     --lighterPeach: hsl(14, 76%, 97%);
- 
     
     /* radius */
     --mainRadius: 2rem;
