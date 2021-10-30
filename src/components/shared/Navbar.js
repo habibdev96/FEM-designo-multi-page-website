@@ -3,12 +3,17 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FlexBetween } from '../styledElements/Containers.styled';
 import { StyledLink } from '../styledElements/Links.styled';
-import { sectionSpacingSm, flexAlign } from '../../abstracts/Mixins';
+import { flexAlign } from '../../abstracts/Mixins';
 import logo from '../../assets/shared/desktop/logo-dark.png';
 import { useGlobalContext } from '../../context/context';
 
 const StyledNav = styled.nav`
-  ${sectionSpacingSm}
+  padding: 3rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3000;
+  background-color: var(--white);
 
   .logo {
     width: 20rem;

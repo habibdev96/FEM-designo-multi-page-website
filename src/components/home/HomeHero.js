@@ -10,7 +10,7 @@ import phone from '../../assets/home/desktop/image-hero-phone.png';
 import pattern from '../../assets/home/desktop/bg-pattern-hero-home.svg';
 
 const StyledHeader = styled.header`
-  margin: 0 2rem;
+  margin: 15rem 2rem 0 2rem;
 `;
 
 const Container = styled.div`
@@ -61,7 +61,7 @@ export default function HomeHero() {
               <Image src={pattern} alt='' />
             </div>
             <div className='phone'>
-              <Image placeholder='blur' src={phone} alt='smartphone' />
+              <Image src={phone} alt='smartphone' />
             </div>
           </div>
         </TwoCol>

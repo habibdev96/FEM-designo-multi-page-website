@@ -8,7 +8,7 @@ import ContactForm from './ContactForm';
 import pattern from '../../assets/contact/desktop/bg-pattern-hero-desktop.svg';
 
 const StyledHeader = styled.header`
-  margin: 0 2rem;
+  margin: 15rem 2rem 0 2rem;
 `;
 
 const Container = styled.div`

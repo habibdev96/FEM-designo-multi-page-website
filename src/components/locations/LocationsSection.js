@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import SingleLocation from './SingleLocation';
 import { useGlobalContext } from '../../context/context';
 
-const StyledSection = styled.section``;
+const StyledSection = styled.section`
+  margin: 15rem 2rem 0 2rem;
+`;
 
 export default function LocationsSection() {
   const { locations } = useGlobalContext();

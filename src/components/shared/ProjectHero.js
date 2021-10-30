@@ -5,7 +5,7 @@ import { Paragraph } from '../styledElements/Paragraphs.styled';
 import { maxWidthLg, sectionSpacingMd } from '../../abstracts/Mixins';
 
 const StyledHeader = styled.header`
-  margin: 0 2rem;
+  margin: 15rem 2rem 0 2rem;
 `;
 
 const Container = styled.div`

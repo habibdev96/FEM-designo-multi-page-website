@@ -8,7 +8,7 @@ import showcase from '../../assets/about/desktop/image-about-hero.jpg';
 import pattern from '../../assets/about/desktop/bg-pattern-hero-about-desktop.svg';
 
 const StyledHeader = styled.header`
-  margin: 0 2rem;
+  margin: 15rem 2rem 0 2rem;
 `;
 
 const Container = styled.div`
