@@ -26,3 +26,4 @@
 
 ## Libraries
 - react-icons
+- react-hook-form
