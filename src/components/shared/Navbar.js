@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import Link from 'next/link';
+import MobileMenuToggler from '../shared/MobileMenuToggler';
 import { FlexBetween } from '../styledElements/Containers.styled';
 import { StyledLink } from '../styledElements/Links.styled';
 import { flexAlign } from '../../abstracts/Mixins';
@@ -54,6 +55,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+        <MobileMenuToggler />
       </FlexBetween>
     </StyledNav>
   );

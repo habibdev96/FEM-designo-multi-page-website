@@ -28,6 +28,7 @@ export const AppProvider = ({ children }) => {
   );
   const [locationsCta, setLocationsCta] = useState(locationsCtaData);
   const [locations, setLocations] = useState(locationsData);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const {
     handleSubmit,
@@ -51,6 +52,8 @@ export const AppProvider = ({ children }) => {
         register,
         errors,
         onSubmit,
+        isMobileMenuOpen,
+        setIsMobileMenuOpen,
       }}
     >
       {children}
