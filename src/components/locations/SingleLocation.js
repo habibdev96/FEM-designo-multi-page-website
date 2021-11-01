@@ -8,10 +8,15 @@ import {
   textStyles,
 } from '../../abstracts/Mixins';
 import pattern from '../../assets/shared/desktop/bg-pattern-two-circles.svg';
+import Responsive from '../../abstracts/Responsive';
 
 const StyledArticle = styled.article`
   margin: 5rem;
   position: relative;
+
+  ${Responsive.sm`
+    margin: 2rem;
+  `}
 `;
 
 const Container = styled.div`
@@ -21,8 +26,16 @@ const Container = styled.div`
   align-items: center;
   gap: var(--gap);
 
+  ${Responsive.md`
+    grid-template-columns: 1fr;
+  `}
+
   &.inverted {
     grid-template-columns: 1fr 2fr;
+
+    ${Responsive.md`
+      grid-template-columns: 1fr;
+    `}
   }
 
   .info {
@@ -32,6 +45,10 @@ const Container = styled.div`
     padding: 5rem;
     background-color: var(--lighterPeach);
     border-radius: var(--secondaryRadius);
+
+    ${Responsive.md`
+      order: -1;
+    `}
   }
 
   .pattern {
@@ -42,6 +59,10 @@ const Container = styled.div`
   .contact {
     ${flexAlign}
     align-items: flex-start;
+
+    ${Responsive.md`
+      flex-direction: column;
+    `}
   }
 
   h5 {
@@ -58,6 +79,10 @@ const Container = styled.div`
   }
 
   .map {
+    ${Responsive.md`
+      margin: 0 auto;
+    `}
+
     img {
       border-radius: var(--secondaryRadius);
     }

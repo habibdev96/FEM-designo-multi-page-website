@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { textStyles, headingStyles } from '../../abstracts/Mixins';
+import Image from 'next/image';
 import logo from '../../assets/logo/habibdevgif.gif';
 
 const StyledTag = styled.div`
@@ -54,7 +55,9 @@ const Tag = () => {
           habibdev{' '}
         </a>
       </h3>
-      <img src={logo} alt='logo' className='tag-logo' />
+      <div className='tag-logo'>
+        <Image src={logo} alt='logo' />
+      </div>
     </StyledTag>
   );
 };

@@ -11,6 +11,7 @@ import {
 } from '../../abstracts/Mixins';
 import Tag from './Tag';
 import logo from '../../assets/shared/desktop/logo-light.png';
+import Responsive from '../../abstracts/Responsive';
 import { useGlobalContext } from '../../context/context';
 
 const StyledFooter = styled.footer`
@@ -20,6 +21,10 @@ const StyledFooter = styled.footer`
   .top {
     padding: 15rem 0 4rem 0;
     border-bottom: 0.1rem solid rgba(255, 255, 255, 0.1);
+
+    ${Responsive.md`
+      flex-direction: column;
+    `}
   }
 
   .logo {
@@ -29,15 +34,32 @@ const StyledFooter = styled.footer`
 
   .links {
     ${flexAlign}
+
+    ${Responsive.sm`
+      flex-direction: column;
+    `}
   }
 
   .bottom {
     padding-top: 4rem;
+
+    ${Responsive.md`
+      flex-direction: column;
+    `}
+
+    ${Responsive.sm`
+      text-align: center;
+    `}
   }
 
   .info {
     ${flexAlign}
     align-items: flex-start;
+
+    ${Responsive.sm`
+      align-items: center;
+      flex-direction: column;
+    `}
   }
 
   h5 {

@@ -5,6 +5,7 @@ import { FlexBetween } from '../styledElements/Containers.styled';
 import { StyledLink } from '../styledElements/Links.styled';
 import { flexAlign } from '../../abstracts/Mixins';
 import logo from '../../assets/shared/desktop/logo-dark.png';
+import Responsive from '../../abstracts/Responsive';
 import { useGlobalContext } from '../../context/context';
 
 const StyledNav = styled.nav`
@@ -18,10 +19,18 @@ const StyledNav = styled.nav`
   .logo {
     width: 20rem;
     cursor: pointer;
+
+    ${Responsive.md`
+      width: 15rem;
+    `}
   }
 
   .links {
     ${flexAlign}
+
+    ${Responsive.md`
+      display: none;
+    `}
   }
 `;
 

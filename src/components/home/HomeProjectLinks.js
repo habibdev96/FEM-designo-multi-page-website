@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { maxWidthLg } from '../../abstracts/Mixins';
+import { ThreeCol } from '../styledElements/Containers.styled';
 import ProjectLink from '../shared/ProjectLink';
 import webDesignBg from '../../assets/home/desktop/image-web-design-large.jpg';
 import appDesignBg from '../../assets/home/desktop/image-app-design.jpg';
@@ -12,29 +13,19 @@ const StyledSection = styled.section`
 const Container = styled.div`
   ${maxWidthLg}
   padding: 10rem 0;
-  margin: 5rem auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--gap);
-
-  & > div {
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap);
-  }
 `;
 
 export default function HomeProjectLinks() {
   return (
     <StyledSection>
       <Container>
-        <ProjectLink
-          path='/WebDesign'
-          full={true}
-          bg={webDesignBg}
-          text='Web Design'
-        />
-        <div>
+        <ThreeCol>
+          <ProjectLink
+            path='/WebDesign'
+            full={false}
+            bg={webDesignBg}
+            text='Web Design'
+          />
           <ProjectLink
             path='/AppDesign'
             full={false}
@@ -47,7 +38,7 @@ export default function HomeProjectLinks() {
             bg={graphicDesignBg}
             text='Graphic Design'
           />
-        </div>
+        </ThreeCol>
       </Container>
     </StyledSection>
   );

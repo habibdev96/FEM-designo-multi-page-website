@@ -13,10 +13,10 @@ export const TwoCol = styled.div`
   ${maxWidthLg}
   display: grid;
   align-items: ${({ start }) => (start ? 'flex-start' : 'center')};
-  grid-template-columns: repeat(2, 1fr);
   gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 `;
 
 export const ThreeCol = styled(TwoCol)`
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 `;

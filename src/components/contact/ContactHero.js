@@ -6,9 +6,14 @@ import { TwoCol } from '../styledElements/Containers.styled';
 import { sectionSpacingSm, maxWidthLg } from '../../abstracts/Mixins';
 import ContactForm from './ContactForm';
 import pattern from '../../assets/contact/desktop/bg-pattern-hero-desktop.svg';
+import Responsive from '../../abstracts/Responsive';
 
 const StyledHeader = styled.header`
   margin: 15rem 2rem 0 2rem;
+
+  ${Responsive.md`
+    margin: 15rem 0 0 0;
+  `}
 `;
 
 const Container = styled.div`
@@ -19,6 +24,10 @@ const Container = styled.div`
   border-radius: var(--secondaryRadius);
   background-color: var(--peach);
 
+  ${Responsive.md`
+    border-radius: 0;
+  `}
+
   .pattern {
     position: absolute;
     top: 0;
@@ -26,6 +35,10 @@ const Container = styled.div`
 
   .info {
     padding: 5rem;
+
+    ${Responsive.md`
+      padding: 2rem;
+    `}
   }
 `;
 

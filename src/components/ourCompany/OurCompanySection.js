@@ -4,38 +4,56 @@ import { TwoCol } from '../styledElements/Containers.styled';
 import { SectionHeading } from '../styledElements/Headings.styled';
 import { Paragraph } from '../styledElements/Paragraphs.styled';
 import { maxWidthLg, sectionSpacingMd } from '../../abstracts/Mixins';
+import Responsive from '../../abstracts/Responsive';
 
 const StyledSection = styled.section`
   ${sectionSpacingMd}
   margin: 0 2rem;
+
+  ${Responsive.sm`
+    margin: 0; 
+  `}
 `;
 
 const Container = styled.div`
   ${maxWidthLg}
-  background-color: var(--lighterPeach);
-  border-radius: var(--secondaryRadius);
 
-  .info {
-    padding-right: 10rem;
+  .info,
+  .info--inverted {
+    background-color: var(--lighterPeach);
+    border-radius: var(--secondaryRadius);
+    padding: 5rem;
 
-    &--inverted {
-      padding-left: 10rem;
-    }
+    ${Responsive.md`
+      order: -1;
+    `}
+
+    ${Responsive.sm`
+      padding: 5rem 2rem;
+    `}
   }
 
   .showcase {
+    ${Responsive.md`
+      display: flex;
+      justify-content: center;
+    `}
+
     img {
-      border-top-left-radius: var(--secondaryRadius);
-      border-bottom-left-radius: var(--secondaryRadius);
+      border-radius: var(--secondaryRadius);
     }
 
     &--inverted {
       display: flex;
       justify-content: flex-end;
 
+      ${Responsive.md`
+        display: flex;
+        justify-content: center;
+      `}
+
       img {
-        border-top-right-radius: var(--secondaryRadius);
-        border-bottom-right-radius: var(--secondaryRadius);
+        border-radius: var(--secondaryRadius);
       }
     }
   }

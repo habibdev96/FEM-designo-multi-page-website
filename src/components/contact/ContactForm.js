@@ -2,10 +2,15 @@ import styled from 'styled-components';
 import { FormButton } from '../styledElements/Buttons.styled';
 import { textStyles, flexAlign } from '../../abstracts/Mixins';
 import { AiFillExclamationCircle } from 'react-icons/ai';
+import Responsive from '../../abstracts/Responsive';
 import { useGlobalContext } from '../../context/context';
 
 const StyledForm = styled.form`
   padding: 0 5rem;
+
+  ${Responsive.sm`
+    padding: 0 2rem;
+  `}
 
   .form-control {
     margin: 1rem 0;

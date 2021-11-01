@@ -7,6 +7,7 @@ import { Paragraph } from '../styledElements/Paragraphs.styled';
 import { Button } from '../styledElements/Buttons.styled';
 import { maxWidthSm } from '../../abstracts/Mixins';
 import pattern from '../../assets/shared/desktop/bg-pattern-call-to-action.svg';
+import Responsive from '../../abstracts/Responsive';
 
 const StyledSection = styled.section`
   margin: 0 2rem;
@@ -20,6 +21,14 @@ const Container = styled.div`
   background-color: var(--peach);
   border-radius: var(--secondaryRadius);
 
+  ${Responsive.md`
+    text-align: center;
+
+    .desc {
+      display: none;
+    }
+  `}
+
   .pattern {
     position: absolute;
     width: 100%;
@@ -32,10 +41,18 @@ const Container = styled.div`
     padding: 5rem 1rem 5rem 5rem;
     position: relative;
     z-index: 10;
+
+    ${Responsive.md`
+      padding: 5rem 5rem 0 5rem;
+    `}
   }
 
   .btn {
     margin: 0 auto;
+
+    ${Responsive.md`
+      margin: 0 0 5rem 0;
+    `}
   }
 `;
 
@@ -49,7 +66,7 @@ export default function Cta() {
         <TwoCol>
           <div className='content'>
             <SectionHeading light>Let’s talk about your project</SectionHeading>
-            <Paragraph light>
+            <Paragraph light className='desc'>
               Ready to take it to the next level? Contact us today and find out
               how our expertise can help your business grow. Get in touch
             </Paragraph>
