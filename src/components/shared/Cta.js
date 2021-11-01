@@ -24,6 +24,9 @@ const Container = styled.div`
   ${Responsive.md`
     text-align: center;
 
+  `}
+
+  ${Responsive.sm`
     .desc {
       display: none;
     }
@@ -65,15 +68,17 @@ export default function Cta() {
         </div>
         <TwoCol>
           <div className='content'>
-            <SectionHeading light>Let’s talk about your project</SectionHeading>
-            <Paragraph light className='desc'>
+            <SectionHeading light={+true}>
+              Let’s talk about your project
+            </SectionHeading>
+            <Paragraph light={+true} className='desc'>
               Ready to take it to the next level? Contact us today and find out
               how our expertise can help your business grow. Get in touch
             </Paragraph>
           </div>
           <div className='btn'>
             <Link href='/Contact' passHref>
-              <Button primary>Get in Touch</Button>
+              <Button primary={+true}>Get in Touch</Button>
             </Link>
           </div>
         </TwoCol>

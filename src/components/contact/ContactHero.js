@@ -51,8 +51,8 @@ export default function ContactHero() {
         </div>
         <TwoCol>
           <div className='info'>
-            <MainHeading light>Contact Us</MainHeading>
-            <Paragraph light>
+            <MainHeading light={+true}>Contact Us</MainHeading>
+            <Paragraph light={+true}>
               Ready to take it to the next level? Let’s talk about your project
               or idea and find out how we can help your business grow. If you
               are looking for unique digital experiences that’s relatable to

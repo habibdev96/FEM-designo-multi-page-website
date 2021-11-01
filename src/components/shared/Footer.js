@@ -107,7 +107,7 @@ export default function Footer() {
           {links.map((link) => (
             <li key={link.id}>
               <Link href={link.path} passHref>
-                <StyledLink light>{link.text}</StyledLink>
+                <StyledLink light={+true}>{link.text}</StyledLink>
               </Link>
             </li>
           ))}

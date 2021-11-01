@@ -32,8 +32,8 @@ export default function ProjectHero({ title, description, pattern }) {
         <div className='pattern'>
           <Image src={pattern} alt='' />
         </div>
-        <MainHeading light>{title}</MainHeading>
-        <Paragraph light>{description}</Paragraph>
+        <MainHeading light={+true}>{title}</MainHeading>
+        <Paragraph light={+true}>{description}</Paragraph>
       </Container>
     </StyledHeader>
   );

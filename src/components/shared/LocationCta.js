@@ -32,7 +32,7 @@ export default function LocationCta({ icon, title }) {
       </div>
       <SubHeading className='title'>{title}</SubHeading>
       <Link href='/Locations' passHref>
-        <Button secondary>See Location</Button>
+        <Button secondary={+true}>See Location</Button>
       </Link>
     </StyledArticle>
   );

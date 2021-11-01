@@ -82,16 +82,16 @@ export default function HomeHero() {
       <Container>
         <TwoCol className='twoCol'>
           <div className='info'>
-            <MainHeading light>
+            <MainHeading light={+true}>
               Award-winning custom designs and digital branding solutions
             </MainHeading>
-            <Paragraph light>
+            <Paragraph light={+true}>
               With over 10 years in the industry, we are experienced in creating
               fully responsive websites, app design, and engaging brand
               experiences. Find out more about our services.
             </Paragraph>
             <Link href='/OurCompany' passHref>
-              <Button primary>Learn More</Button>
+              <Button primary={+true}>Learn More</Button>
             </Link>
           </div>
           <div>

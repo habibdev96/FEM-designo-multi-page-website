@@ -63,8 +63,8 @@ export default function OurCompanyHero() {
             <div className='pattern'>
               <Image src={pattern} alt='' />
             </div>
-            <MainHeading light>About Us</MainHeading>
-            <Paragraph light>
+            <MainHeading light={+true}>About Us</MainHeading>
+            <Paragraph light={+true}>
               Founded in 2010, we are a creative agency that produces lasting
               results for our clients. We’ve partnered with many startups,
               corporations, and nonprofits alike to craft designs that make real

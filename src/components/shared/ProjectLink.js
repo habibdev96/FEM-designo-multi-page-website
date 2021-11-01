@@ -71,7 +71,7 @@ export default function ProjectLink({ bg, path, full, text }) {
           <div className='overlay'></div>
         </div>
         <div className='content'>
-          <SectionHeading light uppercase>
+          <SectionHeading light={+true} uppercase>
             {text}
           </SectionHeading>
           <div className='view'>

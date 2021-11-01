@@ -3,8 +3,9 @@ import { textStyles } from '../../abstracts/Mixins';
 
 export const StyledLink = styled.a`
   ${textStyles}
-  font-size: 1.4rem;
+  cursor: pointer;
   text-transform: uppercase;
+  font-size: ${({ mobile }) => (mobile ? '1.7rem' : '1.4rem')};
   color: ${({ light }) => (light ? 'var(--white)' : 'var(--darkGray)')};
 
   &:hover,

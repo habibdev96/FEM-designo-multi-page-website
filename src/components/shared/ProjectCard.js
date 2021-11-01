@@ -57,7 +57,7 @@ export default function ProjectCard({ image, title, description }) {
           <Image src={image} alt={title} />
         </div>
         <div className='content'>
-          <SubHeading peach className='title'>
+          <SubHeading peach={+true} className='title'>
             {title}
           </SubHeading>
           <Paragraph className='desc'>{description}</Paragraph>

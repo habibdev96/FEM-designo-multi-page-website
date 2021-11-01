@@ -11,6 +11,10 @@ export const MainHeading = styled.h1`
   ${Responsive.md`
     font-size: 3.2rem;
   `}
+
+  ${Responsive.xs`
+    font-size: 2.8rem;
+  `}
 `;
 
 export const SectionHeading = styled.h2`

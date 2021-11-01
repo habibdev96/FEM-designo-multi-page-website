@@ -76,9 +76,9 @@ export default function OurCompanySection({
             </div>
           )}
           <div className={`${!invert ? 'info' : 'info--inverted'}`}>
-            <SectionHeading peach>{title}</SectionHeading>
-            <Paragraph dark>{descriptionOne}</Paragraph>
-            <Paragraph dark>{descriptionTwo}</Paragraph>
+            <SectionHeading peach={+true}>{title}</SectionHeading>
+            <Paragraph dark={+true}>{descriptionOne}</Paragraph>
+            <Paragraph dark={+true}>{descriptionTwo}</Paragraph>
           </div>
           {invert && (
             <div className='showcase--inverted'>

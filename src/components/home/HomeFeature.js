@@ -29,7 +29,7 @@ export default function HomeFeature({ icon, title, description }) {
       <div className='icon'>
         <Image src={icon} alt={title} />
       </div>
-      <SubHeading dark>{title}</SubHeading>
+      <SubHeading dark={+true}>{title}</SubHeading>
       <Paragraph>{description}</Paragraph>
     </StyledArticle>
   );

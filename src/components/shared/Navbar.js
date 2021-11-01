@@ -36,13 +36,13 @@ const StyledNav = styled.nav`
 `;
 
 export default function Navbar() {
-  const { links } = useGlobalContext();
+  const { links, setIsMobileMenuOpen } = useGlobalContext();
 
   return (
     <StyledNav>
       <FlexBetween>
         <Link href='/'>
-          <div className='logo'>
+          <div className='logo' onClick={() => setIsMobileMenuOpen(false)}>
             <Image src={logo} alt='designo logo' />
           </div>
         </Link>

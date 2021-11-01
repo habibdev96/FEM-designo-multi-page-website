@@ -108,7 +108,7 @@ export default function SingleLocation({
           <div className='pattern'>
             <Image src={pattern} alt='' />
           </div>
-          <SectionHeading peach>{location}</SectionHeading>
+          <SectionHeading peach={+true}>{location}</SectionHeading>
           <div className='contact'>
             <div>
               <h5>{office}</h5>
