@@ -57,7 +57,7 @@ const MobileMenu = () => {
 
   if (isMobileMenuOpen) {
     return (
-      <Overlay>
+      <Overlay onClick={() => setIsMobileMenuOpen(false)}>
         <StyledMobileMenu>
           <div className='menu-content'>
             <ul className='menu-links'>
